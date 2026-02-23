@@ -24,13 +24,13 @@
 ## Team Information
 - **Team Name:** _TBD_
 
-| Name               | Roll Number | GitHub ID |
-|--------------------|-------------|-----------|
-| Syed Ramiz Abbas   | 27100440    | sramiza   |
-|                    |             |           |
-|                    |             |           |
-|                    |             |           |
-|                    |             |           |
+| Name                | Roll Number | GitHub ID |
+|---------------------|-------------|-----------|
+| Syed Ramiz Abbas    | 27100440    | sramiza   |
+| Muhammad Qasim Ayub | 27100168    | qasimayub |
+|                     |             |           |
+|                     |             |           |
+|                     |             |           |
 
 ---
 
