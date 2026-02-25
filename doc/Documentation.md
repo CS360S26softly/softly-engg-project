@@ -3,6 +3,8 @@
 ## Table of Contents
 - [Team Information](#team-information)
 
+- [Weekly Meetings Schedule](#weekly-meetings-schedule)
+
 - [Meeting Minutes](#meeting-minutes)
   - [Meeting – Feb 25, 2026](#meeting--feb-21-2026)
   - [Meeting – TBD](#meeting--tbd)
@@ -31,6 +33,14 @@
 | Novera Shahid       | 27100392    | noverashahid |
 |                     |             |              |
 |                     |             |              |
+
+---
+
+## Weekly Meetings Schedule
+
+| Day     |       Time        | Duration   |
+|---------|-------------------|------------|
+| Thursday | 1:10 PM - 2:10 PM | 60 minutes |
 
 ---
 
