@@ -31,7 +31,7 @@
 | Syed Ramiz Abbas    | 27100440    | sramiza      |
 | Muhammad Qasim Ayub | 27100168    | qasimayub    |
 | Novera Shahid       | 27100392    | noverashahid |
-|                     |             |              |
+| Anas Asim Sheikh    | 27100425    | Anas-Lums    |
 |                     |             |              |
 
 ---
