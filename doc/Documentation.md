@@ -6,7 +6,7 @@
 - [Weekly Meetings Schedule](#weekly-meetings-schedule)
 
 - [Meeting Minutes](#meeting-minutes)
-  - [Meeting – Feb 25, 2026](#meeting--feb-21-2026)
+  - [Meeting – Feb 21, 2026](#meeting--feb-21-2026)
   - [Meeting – TBD](#meeting--tbd)
 
 - [UML Diagrams](#uml-diagrams)
