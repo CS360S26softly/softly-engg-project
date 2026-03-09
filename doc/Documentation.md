@@ -148,37 +148,84 @@ Sunday, March 8, 2026
 - [ ] Draft initial UML Class Diagram based on finalized CRC cards
 
 ---
+## Object-Oriented Analysis (CRC Cards)
 
-## CRC Cards
+To ensure a modular and scalable architecture, our system separates core data entities (Models) from the classes that handle business logic (Managers/Controllers). Below are the CRC cards for the most important anticipated classes.
 
-### Class: Event (Model)
-| Responsibilities | Collaborators |
-|:---|:---|
-| Store and provide access to event metadata (Title, Date, Venue, Category) | EventController |
-| Maintain a list of registered attendees and check capacity limits | RSVPController |
-| Store media assets like posters and descriptions for display | EventController |
+### Core Actors & Entities
 
-### Class: EventController (Controller)
-| Responsibilities | Collaborators |
-|:---|:---|
-| Create, update, and delete event records in the database | Event, Database |
-| Handle search queries and apply category/organizer filters | Event |
-| Process Admin approval/rejection status for new event submissions | Admin, Event |
+| Class Name: `Student` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Store personal profile data (name, major, ID). | `SocietyProfile` |
+| Track followed societies and user preferences. | `EventCatalog` |
+| Submit an RSVP for an upcoming event. | `RSVPManager`, `Event` |
+| Author and submit reviews for attended events. | `ReviewManager` |
 
-### Class: RSVPController (Controller)
-| Responsibilities | Collaborators |
-|:---|:---|
-| Process student RSVP requests and update event attendance counts | Student, Event |
-| Sync RSVP'd events with the student's personal in-app calendar | CalendarService |
-| Trigger push notifications for event reminders and updates | NotificationService |
+| Class Name: `SocietyOrganizer` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Store society details and executive members. | |
+| Draft, edit, and submit new events for approval. | `Event`, `CCAAdmin` |
+| Request venue bookings and PR items. | `VenueBooking`, `CCAAdmin` |
+| Schedule announcements and notifications. | `NotificationDispatcher` |
 
-### Class: UserController (Controller)
-| Responsibilities | Collaborators |
-|:---|:---|
-| Manage user authentication and role-based access (Student, Organizer, Admin) | Database |
-| Track which societies or categories a student is currently following | Student, Society |
-| Capture and store user feedback/reviews for past events | Event, Student |
+| Class Name: `CCAAdmin` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Review, approve, or reject pending events. | `Event`, `EventCatalog` |
+| Review and resolve venue booking conflicts. | `VenueBooking` |
+| Approve campus stall registrations and PR requests. | `Stall`, `SocietyOrganizer` |
+| Monitor platform analytics and flag inappropriate reviews. | `ReviewManager` |
 
+| Class Name: `Event` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Maintain event state (Draft, Pending, Approved, Rejected). | `CCAAdmin` |
+| Store core details (title, time, location, description, capacity). | `SocietyOrganizer` |
+| Track current RSVP count against maximum capacity. | `RSVPManager` |
+| Store associated media (posters, banners). | |
+
+| Class Name: `VenueBooking` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Store requested time slots, required equipment, and location. | `Event`, `SocietyOrganizer` |
+| Track approval status and prevent double-booking. | `CCAAdmin` |
+
+| Class Name: `Stall` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Store stall details (location, operating hours, purpose). | `SocietyOrganizer` |
+| Track CCA approval status for campus activation. | `CCAAdmin` |
+
+### Core Controllers & Managers
+
+| Class Name: `EventCatalog` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Retrieve and display the feed of approved events. | `Event` |
+| Filter events by category, society, date, and location. | `Event`, `Student` |
+| Calculate and display trending events based on RSVP velocity. | `Event`, `RSVPManager` |
+
+| Class Name: `RSVPManager` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Verify available capacity before confirming an RSVP. | `Event` |
+| Update the event's attendee list. | `Event`, `Student` |
+| Sync the confirmed event to the student's in-app schedule. | `Student` |
+
+| Class Name: `NotificationDispatcher` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Trigger automated alerts to followers when a society posts an event. | `SocietyOrganizer`, `Student` |
+| Send scheduled reminders to users who have RSVP'd. | `Event`, `Student` |
+| Alert organizers when an event/venue is approved or rejected. | `CCAAdmin`, `SocietyOrganizer` |
+
+| Class Name: `ReviewManager` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Verify a student actually attended before allowing a review. | `RSVPManager`, `Student` |
+| Calculate the aggregate rating for an event or society. | `Event`, `Review` |
 ---
 
 ## UML Diagrams
