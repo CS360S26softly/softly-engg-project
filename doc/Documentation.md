@@ -116,8 +116,68 @@ Saturday, February 21, 2026
 
 ---
 
-### Meeting – TBD
-_Content to be added._
+### Meeting – March 8, 2026
+
+#### Date
+Sunday, March 8, 2026
+
+#### Attendance
+- Anas
+- Novera
+- Qasim
+- Ramiz
+- Usman
+
+---
+
+#### Key Takeaways
+- **Backlog Completion**: Finalized the entry of all 24 User Stories into the GitHub Issues tracker and the `Documentation.md` file.
+- **Workflow Reorganization**: Categorized User Stories into Project Parts 1, 2, and 3 to align with the core MVP, engagement features, and advanced admin functionality.
+- **Task Division**: 
+  - **Ramiz & Anas**: Responsible for GitHub Project Board setup and Backlog metadata (Risk, Points, Release).
+  - **Novera & Usman**: Focused on Figma Wireframing for Student and Organizer flows.
+  - **Qasim**: Assigned to the Admin/CCA flow and floating support.
+- **System Analysis**: Commenced Object-Oriented Analysis by drafting CRC cards to define Model and Controller responsibilities.
+
+---
+
+#### Action Items
+- [x] Create GitHub Project Board and import all 24 issues 
+- [x] Organize Product Backlog into Project Parts 1, 2, and 3 
+- [ ] Finalize Student and Organizer wireframes in Figma
+- [ ] Draft initial UML Class Diagram based on finalized CRC cards
+
+---
+
+## CRC Cards
+
+### Class: Event (Model)
+| Responsibilities | Collaborators |
+|:---|:---|
+| Store and provide access to event metadata (Title, Date, Venue, Category) | EventController |
+| Maintain a list of registered attendees and check capacity limits | RSVPController |
+| Store media assets like posters and descriptions for display | EventController |
+
+### Class: EventController (Controller)
+| Responsibilities | Collaborators |
+|:---|:---|
+| Create, update, and delete event records in the database | Event, Database |
+| Handle search queries and apply category/organizer filters | Event |
+| Process Admin approval/rejection status for new event submissions | Admin, Event |
+
+### Class: RSVPController (Controller)
+| Responsibilities | Collaborators |
+|:---|:---|
+| Process student RSVP requests and update event attendance counts | Student, Event |
+| Sync RSVP'd events with the student's personal in-app calendar | CalendarService |
+| Trigger push notifications for event reminders and updates | NotificationService |
+
+### Class: UserController (Controller)
+| Responsibilities | Collaborators |
+|:---|:---|
+| Manage user authentication and role-based access (Student, Organizer, Admin) | Database |
+| Track which societies or categories a student is currently following | Student, Society |
+| Capture and store user feedback/reviews for past events | Event, Student |
 
 ---
 
