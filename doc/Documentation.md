@@ -128,18 +128,41 @@ _Add UML diagrams here or link images from the repository._
 
 ## Product Backlog
 
-### Product Backlog – Project Part 1
+### Product Backlog – Project Part 1 (Core & MVP)
 | ID | User Story | Priority | Status |
-|----|------------|----------|--------|
+|:---|:---|:---|:---|
+| **US-01** | As a student, I want to browse a centralized feed of campus events so that I can easily discover activities happening across campus. | High | To Do |
+| **US-02** | As a student, I want to filter events by category so that I can quickly find events relevant to me. | High | To Do |
+| **US-03** | As a student, I want to filter events by department or organizing society so that I can see events hosted by groups I am interested in. | High | To Do |
+| **US-05** | As a student, I want to open an event page with detailed information so that I can decide whether to attend. | High | To Do |
+| **US-06** | As a student, I want to RSVP to events so that organizers can track expected attendance. | High | To Do |
+| **US-13** | As a society organizer, I want to create an event by submitting details so that it can be listed on the platform. | High | To Do |
+| **US-20** | As a CCA admin, I want to approve or reject submitted event requests so that only verified events appear. | High | To Do |
 
-### Product Backlog – Project Part 2
+### Product Backlog – Project Part 2 (Engagement & Navigation)
 | ID | User Story | Priority | Status |
-|----|------------|----------|--------|
+|:---|:---|:---|:---|
+| **US-04** | As a student, I want to sort events by date and location so that I can easily plan which events to attend. | High | To Do |
+| **US-07** | As a student, I want events I RSVP to appear in my in-app calendar so that I can keep track of upcoming events. | Medium | To Do |
+| **US-08** | As a student, I want to receive notifications about events from societies I follow so that I stay updated. | High | To Do |
+| **US-09** | As a student, I want to follow societies so that I automatically receive updates about their events. | High | To Do |
+| **US-14** | As a society organizer, I want to edit event details so that I can update information if something changes. | High | To Do |
+| **US-11** | As a student, I want to see a page showing active stalls on campus today so that I know what is happening. | Medium | To Do |
+| **US-12** | As a student, I want to see trending events so that I can quickly discover popular activities. | Medium | To Do |
+| **US-17** | As a society organizer, I want to register a campus stall so that students can discover it. | Medium | To Do |
 
-### Product Backlog – Project Part 3
+### Product Backlog – Project Part 3 (Admin & Advanced Analytics)
 | ID | User Story | Priority | Status |
-|----|------------|----------|--------|
-
+|:---|:---|:---|:---|
+| **US-10** | As a student, I want to leave a review after attending an event so that I can share feedback with others. | Medium | To Do |
+| **US-15** | As a society organizer, I want to view RSVP counts and attendance statistics so that I can measure engagement. | Medium | To Do |
+| **US-16** | As a society organizer, I want to schedule announcement notifications for attendees so that they are informed. | Medium | To Do |
+| **US-18** | As a society organizer, I want to submit venue booking requests so that my event can be hosted properly. | High | To Do |
+| **US-19** | As a society organizer, I want to create recruitment listings so that students can apply for society roles. | Medium | To Do |
+| **US-21** | As a CCA admin, I want to approve or reject stall registrations so that campus activations are regulated. | Medium | To Do |
+| **US-22** | As a CCA admin, I want to review PR item requests from societies so that purchases follow institutional guidelines. | Medium | To Do |
+| **US-23** | As a CCA admin, I want to manage venue availability and resolve conflicts so that events are scheduled properly. | High | To Do |
+| **US-24** | As a CCA admin, I want to monitor attendance and reviews to ensure events comply with campus standards. | Medium | To Do |
 ---
 
 ## Wireframes
