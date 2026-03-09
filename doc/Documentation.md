@@ -248,9 +248,9 @@ _Current Phase: Object-Oriented Analysis, Backlog generation, and Wireframing._
 | ID | User Story | Priority | Status |
 |:---|:---|:---|:---|
 | **US-01** | As a student, I want to browse a centralized feed of campus events so that I can easily discover activities happening across campus. | High | To Do |
-| **US-02** | As a student, I want to filter events by category so that I can quickly find events relevant to me. | High | To Do |
-| **US-03** | As a student, I want to filter events by department or organizing society so that I can see events hosted by groups I am interested in. | High | To Do |
-| **US-04** | As a student, I want to sort events by date and location so that I can easily plan which events to attend. | High | To Do |
+| **US-02** | As a student, I want to filter events by category (technology, arts & culture, business, sports, career development, social impact, academic) so that I can quickly find events relevant to me. | High | To Do |
+| **US-03** | As a society organizer, I want to assign QR code tickets to students and scan them at the venue so that I can quickly and accurately track actual attendance. | High | To Do |
+| **US-04** |As a student, I want to view a chronological schedule of upcoming events so that I can see exactly what is happening on campus today and later this week. | High | To Do |
 | **US-05** | As a student, I want to open an event page with detailed information so that I can decide whether to attend. | High | To Do |
 | **US-06** | As a student, I want to RSVP to events so that I can secure my spot and guarantee my entry. | High | To Do |
 | **US-07** | As a student, I want events I RSVP to appear in my in-app calendar so that I can keep track of upcoming events. | Medium | To Do |
@@ -265,16 +265,15 @@ _Current Phase: Object-Oriented Analysis, Backlog generation, and Wireframing._
 |:---|:---|:---|:---|
 | **US-10** | As a student, I want to leave a review after attending an event so that I can share feedback with others. | Medium | To Do |
 | **US-11** | As a student, I want to see a page showing active stalls on campus today so that I know what is happening. | Medium | To Do |
-| **US-12** | As a student, I want to see trending events so that I can quickly discover popular activities. | Medium | To Do |
+| **US-12** | As a CCA admin, I want to monitor attendance statistics and event reviews so that I can ensure events comply with campus standards. | Medium | To Do |
 | **US-15** | As a society organizer, I want to view RSVP counts and attendance statistics so that I can measure engagement. | Medium | To Do |
 | **US-16** | As a society organizer, I want to schedule announcement notifications for attendees so that they are informed. | Medium | To Do |
 | **US-17** | As a society organizer, I want to register a campus stall so that students can discover it. | Medium | To Do |
 | **US-18** | As a society organizer, I want to submit venue booking requests so that my event can be hosted properly. | High | To Do |
-| **US-19** | As a society organizer, I want to create recruitment listings so that students can apply for society roles. | Medium | To Do |
+| **US-19** | As a CCA admin, I want to manage venue availability and resolve booking conflicts so that events are scheduled properly. | Medium | To Do |
 | **US-21** | As a CCA admin, I want to approve or reject stall registrations so that campus activations are regulated. | Medium | To Do |
 | **US-22** | As a CCA admin, I want to review PR item requests from societies so that purchases follow guidelines. | Medium | To Do |
-| **US-23** | As a CCA admin, I want to manage venue availability and resolve conflicts so that events are scheduled properly. | High | To Do |
-| **US-24** | As a CCA admin, I want to monitor attendance and reviews to ensure events comply with campus standards. | Medium | To Do |
+
 ---
 
 ## Wireframes
