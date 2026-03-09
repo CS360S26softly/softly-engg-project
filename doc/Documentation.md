@@ -252,7 +252,7 @@ _Current Phase: Object-Oriented Analysis, Backlog generation, and Wireframing._
 | **US-03** | As a student, I want to filter events by department or organizing society so that I can see events hosted by groups I am interested in. | High | To Do |
 | **US-04** | As a student, I want to sort events by date and location so that I can easily plan which events to attend. | High | To Do |
 | **US-05** | As a student, I want to open an event page with detailed information so that I can decide whether to attend. | High | To Do |
-| **US-06** | As a student, I want to RSVP to events so that organizers can track expected attendance. | High | To Do |
+| **US-06** | As a student, I want to RSVP to events so that I can secure my spot and guarantee my entry. | High | To Do |
 | **US-07** | As a student, I want events I RSVP to appear in my in-app calendar so that I can keep track of upcoming events. | Medium | To Do |
 | **US-08** | As a student, I want to receive notifications about events from societies I follow so that I stay updated. | High | To Do |
 | **US-09** | As a student, I want to follow societies so that I automatically receive updates about their events. | High | To Do |
