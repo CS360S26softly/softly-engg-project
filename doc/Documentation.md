@@ -306,17 +306,17 @@ To ensure a smooth review, we have structured the Figma file into the following 
 
 #### 1. Student Flow (Core Experience)
 - **Key Features**: Browsing the event feed, category filtering, chronological sorting, and the RSVP process.
-- **Starting Point**: Navigate to the "Student Flow" page or locate the "Student Dashboard" frame.
+- **Starting Point**: Navigate to the frames under the "Student Portal" section.
 - **User Stories Covered**: US-01, US-02, US-04, US-05, US-06.
 
 #### 2. Organiser Flow (Event Management)
 - **Key Features**: Creating new events, editing existing listings, venue booking, and QR attendance tracking.
-- **Starting Point**: Locate the "Organiser Dashboard" frame (labeled "Eventify").
+- **Starting Point**: Locate the "Organiser Portal" frames.
 - **User Stories Covered**: US-13, US-14, US-18, US-03.
 
 #### 3. Admin Flow (Governance)
 - **Key Features**: Reviewing event requests, approving/rejecting stall registrations, and PR item oversight.
-- **Starting Point**: Locate the "Admin Approval" frames in the bottom cluster.
+- **Starting Point**: Locate the "Admin Portal" frames in the bottom cluster.
 - **User Stories Covered**: US-20, US-21, US-22.
 
 ---
@@ -324,6 +324,23 @@ To ensure a smooth review, we have structured the Figma file into the following 
 ### Wireframe Screenshots
 *Screenshots for each Project Part are categorized below for quick reference.*
 
-#### Project Part 3 – Half-Way Checkpoint Screens
+### High-Fidelity Wireframes
 
-#### Project Part 4 – Final Checkpoint Screens
+| Student Event Feed | Student Event Details |
+|:---:|:---:|
+| ![Student Feed](./docs_images/Student-Feed.png) | ![Event Details](./docs_images/Event-Details.png) |
+| *Figure 1: Centralized feed with category filters (US-01, US-02)* | *Figure 2: Detailed event view with review functionality (US-05, US-10)* |
+
+<br>
+
+| Organiser Dashboard | Event Registration |
+|:---:|:---:|
+| ![Organiser Events](./docs_images/Organiser-Events.png) | ![Organiser Create Event](./docs_images/Organiser-Create-Event.png) |
+| *Figure 3: Organiser request management (US-14, US-20)* | *Figure 4: Event creation and metadata input (US-13)* |
+
+<br>
+
+| Organiser Attendance Tracking |
+|:---:|
+| ![Organiser Event Details](./docs_images/Organser-Event-Details.png) |
+| *Figure 5: Real-time RSVP tracking and attendee list management (US-15, US-03)* |
