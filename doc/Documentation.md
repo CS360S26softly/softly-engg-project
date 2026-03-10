@@ -245,7 +245,7 @@ _Current Phase: Object-Oriented Analysis, Backlog generation, and Wireframing._
 | **US-06** | RSVP to Events | As a student, I want to RSVP to events so that I can secure my spot and guarantee my entry. | High | Medium | 5 | To Do |
 | **US-07** | In-App Calendar | As a student, I want events I RSVP to appear in my in-app calendar so that I can keep track of upcoming events. | Medium | Medium | 5 | To Do |
 | **US-08** | Event Notifications | As a student, I want to receive notifications about events from societies or categories I follow so that I stay updated about relevant activities. | High | Medium | 5 | To Do |
-| **US-09** | Follow Societies | As a student, I want to follow societies so that I automatically receive updates about their events. | High | Low | 3 | To Do |
+| **US-09** | Favorite Events | As a student, I want to favorite events so that I can easily find and review them later in a dedicated tab without searching the main feed again. | High | Low | 3 | To Do |
 | **US-13** | Create Event | As a society organizer, I want to create an event by submitting details such as description, poster, schedule, and speakers so that it can be listed on the platform. | High | Medium | 5 | To Do |
 | **US-14** | Edit Event | As a society organizer, I want to edit event details so that I can update information if something changes. | High | Low | 3 | To Do |
 | **US-20** | Approve or Reject Events | As an Admin, I want to approve or reject submitted event requests so that only verified events appear on the platform. | High | Low | 3 | To Do |
