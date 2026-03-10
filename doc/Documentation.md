@@ -322,25 +322,24 @@ To ensure a smooth review, we have structured the Figma file into the following 
 ---
 
 ### Wireframe Screenshots
-*Screenshots for each Project Part are categorized below for quick reference.*
 
 ### High-Fidelity Wireframes
 
 | Student Event Feed | Student Event Details |
 |:---:|:---:|
-| ![Student Feed](./docs_images/Student-Feed.png) | ![Event Details](./docs_images/Event-Details.png) |
+| ![Student Feed](../docs_images/Student-Feed.png) | ![Event Details](../docs_images/Event-Details.png) |
 | *Figure 1: Centralized feed with category filters (US-01, US-02)* | *Figure 2: Detailed event view with review functionality (US-05, US-10)* |
 
 <br>
 
 | Organiser Dashboard | Event Registration |
 |:---:|:---:|
-| ![Organiser Events](./docs_images/Organiser-Events.png) | ![Organiser Create Event](./docs_images/Organiser-Create-Event.png) |
+| ![Organiser Events](../docs_images/Organiser-Events.png) | ![Organiser Create Event](../docs_images/Organiser-Create-Event.png) |
 | *Figure 3: Organiser request management (US-14, US-20)* | *Figure 4: Event creation and metadata input (US-13)* |
 
 <br>
 
 | Organiser Attendance Tracking |
 |:---:|
-| ![Organiser Event Details](./docs_images/Organser-Event-Details.png) |
+| ![Organiser Event Details](../docs_images/Organser-Event-Details.png) |
 | *Figure 5: Real-time RSVP tracking and attendee list management (US-15, US-03)* |
