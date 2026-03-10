@@ -297,7 +297,7 @@ _Current Phase: Object-Oriented Analysis, Backlog generation, and Wireframing._
 ### Interactive Figma Prototype
 The complete system design and interactive prototype can be accessed via the link below. The prototype is organized into three distinct user flows: **Student**, **Organiser**, and **Admin**.
 
-[**👉 View Interactive Figma Prototype**](https://www.figma.com/design/cCayjvWta2xG0mhlfgbxj5/Softly-Design?node-id=0-1&p=f&t=CNUDDUadMb5MBYAj-0)
+[**View Interactive Figma Prototype**](https://www.figma.com/design/cCayjvWta2xG0mhlfgbxj5/Softly-Design?node-id=0-1&p=f&t=CNUDDUadMb5MBYAj-0)
 
 ---
 
@@ -305,14 +305,14 @@ The complete system design and interactive prototype can be accessed via the lin
 To ensure a smooth review, we have structured the Figma file into the following key journeys:
 
 #### 1. Student Flow (Core Experience)
-- **Key Features**: Browsing the event feed, category filtering, event details, and the RSVP process.
+- **Key Features**: Browsing the event feed, category filtering, chronological sorting, and the RSVP process.
 - **Starting Point**: Navigate to the "Student Flow" page or locate the "Student Dashboard" frame.
-- **User Stories Covered**: US-01, US-02, US-03, US-05, US-06.
+- **User Stories Covered**: US-01, US-02, US-04, US-05, US-06.
 
 #### 2. Organiser Flow (Event Management)
-- **Key Features**: Creating new events, editing existing listings, and submitting venue booking requests.
+- **Key Features**: Creating new events, editing existing listings, venue booking, and QR attendance tracking.
 - **Starting Point**: Locate the "Organiser Dashboard" frame (labeled "Eventify").
-- **User Stories Covered**: US-13, US-14, US-18.
+- **User Stories Covered**: US-13, US-14, US-18, US-03.
 
 #### 3. Admin Flow (Governance)
 - **Key Features**: Reviewing event requests, approving/rejecting stall registrations, and PR item oversight.
@@ -325,9 +325,5 @@ To ensure a smooth review, we have structured the Figma file into the following 
 *Screenshots for each Project Part are categorized below for quick reference.*
 
 #### Project Part 3 – Half-Way Checkpoint Screens
-![Student & Organiser Core Screens](https://via.placeholder.com/800x400?text=Insert+Student/Organiser+Screenshot+Here)
-*Figure 1: Core navigation including Event Feed and Creation forms.*
 
 #### Project Part 4 – Final Checkpoint Screens
-![Admin & Analytics Screens](https://via.placeholder.com/800x400?text=Insert+Admin/Analytics+Screenshot+Here)
-*Figure 2: Advanced administrative controls and event analytics dashboards.*
