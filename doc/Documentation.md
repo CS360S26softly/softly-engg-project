@@ -316,10 +316,12 @@ To ensure a smooth review, we have structured the Figma file into the following 
 
 <br>
 
-| Organiser Attendance Tracking |
-|:---:|
-| <img src="../docs_images/Organser-Event-Details.png" width="300"> |
-| *Figure 5: RSVP tracking and attendee list (US-15, US-03)* |
+| Organiser Event Management | Organiser Attendee List |
+|:---:|:---:|
+| <img src="../docs_images/Organiser-Event-Details.png" width="300"> | <img src="../docs_images/Organiser-Attendees.png" width="300"> |
+| *Figure 5: RSVP tracking and event overview (US-15)* | *Figure 6: Attendee management and attendance marking (US-03)* |
+
+
 
 ## Contribution Statements
 
