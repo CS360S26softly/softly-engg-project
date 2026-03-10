@@ -298,8 +298,9 @@ To ensure a smooth review, we have structured the Figma file into the following 
 ---
 
 ### Wireframe Screenshots
+> **Note on Implementation:** The screenshots below represent only a fraction of the full system design. The complete interactive prototype—including all state changes, edge cases, and the full Student, Organiser, and Admin user journeys—can be explored via the [Interactive Figma Link](#interactive-figma-prototype) provided above.
 
-### High-Fidelity Wireframes
+#### High-Fidelity Wireframes
 
 | Student Event Feed | Student Event Details |
 |:---:|:---:|
