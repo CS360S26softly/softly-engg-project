@@ -150,7 +150,9 @@ Sunday, March 8, 2026
 ---
 ## Object-Oriented Analysis (CRC Cards)
 
-To ensure a modular and scalable architecture, our system separates core data entities (Models) from the classes that handle business logic (Managers/Controllers). Below are the CRC cards for the most important anticipated classes.
+To ensure a modular and scalable architecture, our system separates core data entities (Models) from the classes that handle business logic (Managers/Controllers). Below are the CRC cards for the most important anticipated classes, mapped directly to our product backlog.
+
+
 
 ### Core Actors & Entities
 
@@ -160,7 +162,8 @@ To ensure a modular and scalable architecture, our system separates core data en
 | Store personal profile data (name, major, ID). | `SocietyProfile` |
 | Track followed societies and user preferences. | `EventCatalog` |
 | Submit an RSVP for an upcoming event. | `RSVPManager`, `Event` |
-| Author and submit reviews for attended events. | `ReviewManager` |
+| Manage personal in-app event schedule. | `RSVPManager` |
+| Author and submit reviews for attended events. | `ReviewManager`, `Review` |
 
 | Class Name: `SocietyOrganizer` | |
 | :--- | :--- |
@@ -169,6 +172,7 @@ To ensure a modular and scalable architecture, our system separates core data en
 | Draft, edit, and submit new events for approval. | `Event`, `CCAAdmin` |
 | Request venue bookings and PR items. | `VenueBooking`, `CCAAdmin` |
 | Schedule announcements and notifications. | `NotificationDispatcher` |
+| Scan student QR tickets at the event entrance. | `AttendanceTracker` |
 
 | Class Name: `CCAAdmin` | |
 | :--- | :--- |
@@ -185,6 +189,11 @@ To ensure a modular and scalable architecture, our system separates core data en
 | Store core details (title, time, location, description, capacity). | `SocietyOrganizer` |
 | Track current RSVP count against maximum capacity. | `RSVPManager` |
 | Store associated media (posters, banners). | |
+
+| Class Name: `Review` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Store rating score, text feedback, and timestamp. | `Student`, `Event` |
 
 | Class Name: `VenueBooking` | |
 | :--- | :--- |
@@ -214,6 +223,13 @@ To ensure a modular and scalable architecture, our system separates core data en
 | Update the event's attendee list. | `Event`, `Student` |
 | Sync the confirmed event to the student's in-app schedule. | `Student` |
 
+| Class Name: `AttendanceTracker` | |
+| :--- | :--- |
+| **Responsibilities** | **Collaborators** |
+| Generate a unique QR code ticket when a student RSVPs. | `RSVPManager`, `Student` |
+| Verify scanned ticket validity and prevent duplicate check-ins. | `Event`, `RSVPManager` |
+| Update the actual attendance count for the event analytics. | `Event` |
+
 | Class Name: `NotificationDispatcher` | |
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
@@ -224,7 +240,7 @@ To ensure a modular and scalable architecture, our system separates core data en
 | Class Name: `ReviewManager` | |
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
-| Verify a student actually attended before allowing a review. | `RSVPManager`, `Student` |
+| Verify a student actually attended before allowing a review. | `AttendanceTracker`, `Student` |
 | Calculate the aggregate rating for an event or society. | `Event`, `Review` |
 ---
 
@@ -245,35 +261,40 @@ _Initial project pitch and topic selection completed._
 _Current Phase: Object-Oriented Analysis, Backlog generation, and Wireframing._
 
 ### Project Part 3 -- Half-Way Checkpoint
-| ID | User Story | Priority | Status |
-|:---|:---|:---|:---|
-| **US-01** | As a student, I want to browse a centralized feed of campus events so that I can easily discover activities happening across campus. | High | To Do |
-| **US-02** | As a student, I want to filter events by category (technology, arts & culture, business, sports, career development, social impact, academic) so that I can quickly find events relevant to me. | High | To Do |
-| **US-03** | As a society organizer, I want to assign QR code tickets to students and scan them at the venue so that I can quickly and accurately track actual attendance. | High | To Do |
-| **US-04** |As a student, I want to view a chronological schedule of upcoming events so that I can see exactly what is happening on campus today and later this week. | High | To Do |
-| **US-05** | As a student, I want to open an event page with detailed information so that I can decide whether to attend. | High | To Do |
-| **US-06** | As a student, I want to RSVP to events so that I can secure my spot and guarantee my entry. | High | To Do |
-| **US-07** | As a student, I want events I RSVP to appear in my in-app calendar so that I can keep track of upcoming events. | Medium | To Do |
-| **US-08** | As a student, I want to receive notifications about events from societies I follow so that I stay updated. | High | To Do |
-| **US-09** | As a student, I want to follow societies so that I automatically receive updates about their events. | High | To Do |
-| **US-13** | As a society organizer, I want to create an event by submitting details so that it can be listed on the platform. | High | To Do |
-| **US-14** | As a society organizer, I want to edit event details so that I can update information if something changes. | High | To Do |
-| **US-20** | As a CCA admin, I want to approve or reject submitted event requests so that only verified events appear. | High | To Do |
+
+| ID | Feature | User Story | Priority | Risk Level | Story Points | Status |
+|:---|:---|:---|:---|:---|:---|:---|
+| **US-01** | Browse Event Feed | As a student, I want to browse a centralized feed of campus events so that I can easily discover activities happening across campus. | High | Low | 5 | To Do |
+| **US-02** | Filter by Category | As a student, I want to filter events by category (technology, arts & culture, etc.) so that I can quickly find events relevant to me. | High | Low | 3 | To Do |
+| **US-04** | Sort Events by Date | As a student, I want to view a chronological schedule of upcoming events so that I can see exactly what is happening on campus today and later this week. | High | Low | 3 | To Do |
+| **US-05** | View Event Details | As a student, I want to open an event page with detailed information (description, time, venue, organizer, media) so that I can decide whether to attend. | High | Low | 5 | To Do |
+| **US-06** | RSVP to Events | As a student, I want to RSVP to events so that I can secure my spot and guarantee my entry. | High | Medium | 5 | To Do |
+| **US-07** | In-App Calendar | As a student, I want events I RSVP to appear in my in-app calendar so that I can keep track of upcoming events. | Medium | Medium | 5 | To Do |
+| **US-08** | Event Notifications | As a student, I want to receive notifications about events from societies or categories I follow so that I stay updated about relevant activities. | High | Medium | 5 | To Do |
+| **US-09** | Follow Societies | As a student, I want to follow societies so that I automatically receive updates about their events. | High | Low | 3 | To Do |
+| **US-13** | Create Event | As a society organizer, I want to create an event by submitting details such as description, poster, schedule, and speakers so that it can be listed on the platform. | High | Medium | 5 | To Do |
+| **US-14** | Edit Event | As a society organizer, I want to edit event details so that I can update information if something changes. | High | Low | 3 | To Do |
+| **US-20** | Approve or Reject Events | As a CCA admin, I want to approve or reject submitted event requests so that only verified events appear on the platform. | High | Low | 3 | To Do |
+
+<br>
 
 ### Project Part 4 -- Final Checkpoint
-| ID | User Story | Priority | Status |
-|:---|:---|:---|:---|
-| **US-10** | As a student, I want to leave a review after attending an event so that I can share feedback with others. | Medium | To Do |
-| **US-11** | As a student, I want to see a page showing active stalls on campus today so that I know what is happening. | Medium | To Do |
-| **US-12** | As a CCA admin, I want to monitor attendance statistics and event reviews so that I can ensure events comply with campus standards. | Medium | To Do |
-| **US-15** | As a society organizer, I want to view RSVP counts and attendance statistics so that I can measure engagement. | Medium | To Do |
-| **US-16** | As a society organizer, I want to schedule announcement notifications for attendees so that they are informed. | Medium | To Do |
-| **US-17** | As a society organizer, I want to register a campus stall so that students can discover it. | Medium | To Do |
-| **US-18** | As a society organizer, I want to submit venue booking requests so that my event can be hosted properly. | High | To Do |
-| **US-19** | As a CCA admin, I want to manage venue availability and resolve booking conflicts so that events are scheduled properly. | Medium | To Do |
-| **US-21** | As a CCA admin, I want to approve or reject stall registrations so that campus activations are regulated. | Medium | To Do |
-| **US-22** | As a CCA admin, I want to review PR item requests from societies so that purchases follow guidelines. | Medium | To Do |
 
+| ID | Feature | User Story | Priority | Risk Level | Story Points | Status |
+|:---|:---|:---|:---|:---|:---|:---|
+| **US-03** | QR Code Attendance | As a society organizer, I want to assign QR code tickets to students and scan them at the venue so that I can quickly and accurately track actual attendance. | Medium | High | 8 | To Do |
+| **US-10** | Leave Event Reviews | As a student, I want to leave a review after attending an event so that I can share feedback with other students. | Medium | Low | 3 | To Do |
+| **US-11** | View Campus Stalls | As a student, I want to see a page showing active stalls on campus today so that I know what is happening around campus. | Medium | Medium | 5 | To Do |
+| **US-12** | Monitor Events | As a CCA admin, I want to monitor attendance statistics and event reviews so that I can ensure events comply with campus standards. | Medium | Medium | 5 | To Do |
+| **US-15** | View Event Analytics | As a society organizer, I want to view RSVP counts and attendance statistics so that I can measure event engagement. | Medium | Medium | 5 | To Do |
+| **US-16** | Schedule Notifications | As a society organizer, I want to schedule announcement and reminder notifications for attendees so that they are informed about the event. | Medium | Medium | 5 | To Do |
+| **US-17** | Register Campus Stall | As a society organizer, I want to register a campus stall with description, location, and timing so that students can discover it. | Medium | Medium | 5 | To Do |
+| **US-18** | Venue Booking Request | As a society organizer, I want to submit venue booking requests with required equipment so that my event can be hosted in an appropriate space. | High | High | 8 | To Do |
+| **US-19** | Manage Venues | As a CCA admin, I want to manage venue availability and resolve booking conflicts so that events are scheduled properly. | High | Medium | 5 | To Do |
+| **US-21** | Approve Stalls | As a CCA admin, I want to approve or reject stall registration requests so that campus activations are regulated. | Medium | Low | 3 | To Do |
+| **US-22** | Review PR Requests | As a CCA admin, I want to review PR item requests from societies so that purchases follow institutional guidelines. | Medium | Medium | 5 | To Do |
+
+---
 ---
 
 ## Wireframes
