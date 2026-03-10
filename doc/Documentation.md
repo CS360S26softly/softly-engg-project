@@ -150,10 +150,6 @@ Sunday, March 8, 2026
 ---
 ## Object-Oriented Analysis (CRC Cards)
 
-To ensure a modular and scalable architecture, our system separates core data entities (Models) from the classes that handle business logic (Managers/Controllers). Below are the CRC cards for the most important anticipated classes, mapped directly to our product backlog.
-
-
-
 ### Core Actors & Entities
 
 | Class Name: `Student` | |
