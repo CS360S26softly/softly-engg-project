@@ -165,12 +165,12 @@ Sunday, March 8, 2026
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
 | Store society details and executive members. | |
-| Draft, edit, and submit new events for approval. | `Event`, `CCAAdmin` |
-| Request venue bookings and PR items. | `VenueBooking`, `CCAAdmin` |
+| Draft, edit, and submit new events for approval. | `Event`, `Admin` |
+| Request venue bookings and PR items. | `VenueBooking`, `Admin` |
 | Schedule announcements and notifications. | `NotificationDispatcher` |
 | Scan student QR tickets at the event entrance. | `AttendanceTracker` |
 
-| Class Name: `CCAAdmin` | |
+| Class Name: `Admin` | |
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
 | Review, approve, or reject pending events. | `Event`, `EventCatalog` |
@@ -181,7 +181,7 @@ Sunday, March 8, 2026
 | Class Name: `Event` | |
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
-| Maintain event state (Draft, Pending, Approved, Rejected). | `CCAAdmin` |
+| Maintain event state (Draft, Pending, Approved, Rejected). | `Admin` |
 | Store core details (title, time, location, description, capacity). | `SocietyOrganizer` |
 | Track current RSVP count against maximum capacity. | `RSVPManager` |
 | Store associated media (posters, banners). | |
@@ -195,13 +195,13 @@ Sunday, March 8, 2026
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
 | Store requested time slots, required equipment, and location. | `Event`, `SocietyOrganizer` |
-| Track approval status and prevent double-booking. | `CCAAdmin` |
+| Track approval status and prevent double-booking. | `Admin` |
 
 | Class Name: `Stall` | |
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
 | Store stall details (location, operating hours, purpose). | `SocietyOrganizer` |
-| Track CCA approval status for campus activation. | `CCAAdmin` |
+| Track CCA approval status for campus activation. | `Admin` |
 
 ### Core Controllers & Managers
 
@@ -231,7 +231,7 @@ Sunday, March 8, 2026
 | **Responsibilities** | **Collaborators** |
 | Trigger automated alerts to followers when a society posts an event. | `SocietyOrganizer`, `Student` |
 | Send scheduled reminders to users who have RSVP'd. | `Event`, `Student` |
-| Alert organizers when an event/venue is approved or rejected. | `CCAAdmin`, `SocietyOrganizer` |
+| Alert organizers when an event/venue is approved or rejected. | `Admin`, `SocietyOrganizer` |
 
 | Class Name: `ReviewManager` | |
 | :--- | :--- |
