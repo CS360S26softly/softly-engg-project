@@ -354,7 +354,7 @@ To ensure a smooth review, we have structured the Figma file into the following 
 **Ramiz:**
 * Migrated the project to a private repository and managed team-wide access for collaborators and TAs.
 * Configured the GitHub Project Board with automated Kanban workflows and structured all 22 User Stories into phased releases (Parts 1–4).
-* Authored the CRC (Class-Responsibility-Collaborator) cards to establish the Model-Controller architecture and backend logic.
+* Co-authored the CRC (Class-Responsibility-Collaborator) cards to establish the Model-Controller architecture and backend logic.
 * Assisted in the Organiser Flow development in Figma by wiring interactive UI components and buttons to create a navigable prototype.
 
 **Anas:**
