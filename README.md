@@ -323,6 +323,12 @@ To ensure a smooth review, we have structured the Figma file into the following 
 | <img src="./docs_images/Organiser-Event-Details.png" width="300"> | <img src="./docs_images/Organiser-Attendees.png" width="300"> |
 | *Figure 5: RSVP tracking and event overview (US-15)* | *Figure 6: Attendee management and attendance marking (US-03)* |
 
+<br>
+
+| Admin Dashboard | Admin PR Approval |
+|:---:|:---:|
+| <img src="./docs_images/Admin-Dashboard.png" width="300"> | <img src="./docs_images/Admin-Approval.png" width="300"> |
+| *Figure 7: Admin governance portal (US-12, US-19)* | *Figure 8: PR request oversight and budget approval (US-22)* |
 
 
 ## Contribution Statements
