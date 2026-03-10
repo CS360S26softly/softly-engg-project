@@ -2,24 +2,17 @@
 
 ## Table of Contents
 - [Team Information](#team-information)
-
 - [Weekly Meetings Schedule](#weekly-meetings-schedule)
-
 - [Meeting Minutes](#meeting-minutes)
   - [Meeting – Feb 21, 2026](#meeting--feb-21-2026)
-  - [Meeting – TBD](#meeting--tbd)
-
+  - [Meeting – March 8, 2026](#meeting--march-8-2026)
+- [Object-Oriented Analysis (CRC Cards)](#object-oriented-analysis-crc-cards)
 - [UML Diagrams](#uml-diagrams)
-
 - [Product Backlog](#product-backlog)
-  - [Product Backlog – Project Part 1](#product-backlog--project-part-1)
-  - [Product Backlog – Project Part 2](#product-backlog--project-part-2)
-  - [Product Backlog – Project Part 3](#product-backlog--project-part-3)
-
-- [Wireframes](#wireframes)
-  - [Wireframes – Project Part 1](#wireframes--project-part-1)
-  - [Wireframes – Project Part 2](#wireframes--project-part-2)
-  - [Wireframes – Project Part 3](#wireframes--project-part-3)
+  - [Project Part 2 -- Preparation](#project-part-2----preparation)
+  - [Project Part 3 -- Half-Way Checkpoint](#project-part-3----half-way-checkpoint)
+  - [Project Part 4 -- Final Checkpoint](#project-part-4----final-checkpoint)
+- [Wireframes & Prototyping](#wireframes--prototyping)
 
 ---
 
@@ -74,25 +67,7 @@ Saturday, February 21, 2026
 
 #### Prepared Questions & Decisions
 
-**Issue #1**
-
-**Issue #4**
-
-**Issue #7**
-
-**Issue #9**
-
-**Issue #11**
-
-**Issue #14**
-
-**Issue #15**
-
-**Issue #18**
-
-**Issue #19**
-
-**Issue #23**
+- None for now
 
 ---
 
@@ -109,8 +84,8 @@ Saturday, February 21, 2026
 ---
 
 #### Action Items
-- [ ] Maintain meeting minutes for every meeting  
-- [ ] Finalize and document complete storyboard  
+- [x] Maintain meeting minutes for every meeting  
+- [x] Finalize and document complete storyboard  
 - [ ] Align UML diagrams with controller/model guidelines  
 - [ ] Implement experiment search in controller  
 
@@ -144,7 +119,7 @@ Sunday, March 8, 2026
 #### Action Items
 - [x] Create GitHub Project Board and import all 24 issues 
 - [x] Organize Product Backlog into Project Parts 1, 2, and 3 
-- [ ] Finalize Student and Organizer wireframes in Figma
+- [x] Finalize Student and Organizer wireframes in Figma
 - [ ] Draft initial UML Class Diagram based on finalized CRC cards
 
 ---
