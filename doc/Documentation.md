@@ -13,6 +13,7 @@
   - [Project Part 3 -- Half-Way Checkpoint](#project-part-3----half-way-checkpoint)
   - [Project Part 4 -- Final Checkpoint](#project-part-4----final-checkpoint)
 - [Wireframes & Prototyping](#wireframes--prototyping)
+- [Contribution Statements](#contribution-statements)
 
 ---
 
@@ -111,7 +112,7 @@ Sunday, March 8, 2026
 - **Task Division**: 
   - **Ramiz & Anas**: Responsible for GitHub Project Board setup and Backlog metadata (Risk, Points, Release).
   - **Novera & Usman**: Focused on Figma Wireframing for Student and Organizer flows.
-  - **Qasim**: Assigned to the Admin/CCA flow and floating support.
+  - **Qasim**: Assigned to the Admin flow and floating support.
 - **System Analysis**: Commenced Object-Oriented Analysis by drafting CRC cards to define Model and Controller responsibilities.
 
 ---
@@ -176,7 +177,7 @@ Sunday, March 8, 2026
 | :--- | :--- |
 | **Responsibilities** | **Collaborators** |
 | Store stall details (location, operating hours, purpose). | `SocietyOrganizer` |
-| Track CCA approval status for campus activation. | `Admin` |
+| Track Admin approval status for campus activation. | `Admin` |
 
 ### Core Controllers & Managers
 
@@ -318,3 +319,35 @@ To ensure a smooth review, we have structured the Figma file into the following 
 |:---:|
 | <img src="../docs_images/Organser-Event-Details.png" width="300"> |
 | *Figure 5: RSVP tracking and attendee list (US-15, US-03)* |
+
+## Contribution Statements
+
+**Qasim:**
+* Primarily worked on the Student Flow in Figma, creating and refining frames and adding interactions to simulate the user journey.
+* Made UI consistency fixes in the Admin flow and implemented the attendance functionality in the Organiser flow, along with additional UI adjustments.
+* Suggested modifications and improvements to the User Stories based on Figma practicality.
+* Worked with the team to decide on additional features.
+
+**Novera:**
+* Led the development of the Admin Flow in Figma, creating the main frames and interactions.
+* Expanded the Student Flow by designing and integrating the Student Dashboard category flow.
+* Suggested modifications and improvements to the User Stories based on Figma practicality.
+* Worked with the team to decide on additional features.
+
+**Usman:**
+* Planned the Admin Flow, making a design-ready plan for how Admins would interact with the app.
+* Focused on the Organiser Flow in Figma, creating and refining frames to represent the organiser-side workflow.
+* Suggested modifications and improvements to the User Stories based on Figma practicality.
+* Worked with the team to decide on additional features.
+
+**Ramiz:**
+* Migrated the project to a private repository and managed team-wide access for collaborators and TAs.
+* Configured the GitHub Project Board with automated Kanban workflows and structured all 22 User Stories into phased releases (Parts 1–4).
+* Authored the CRC (Class-Responsibility-Collaborator) cards to establish the Model-Controller architecture and backend logic.
+* Assisted in the Organiser Flow development in Figma by wiring interactive UI components and buttons to create a navigable prototype.
+
+**Anas:**
+* Co-authored the Object-Oriented Analysis via CRC cards, detailing class responsibilities, collaborators, and system logic.
+* Collaborated on the GitHub integration by structuring the comprehensive Product Backlog and converting all User Stories into fully labeled, tracked issues.
+* Contributed to the Organiser Flow in Figma, assisting with layout and structural design.
+* Conducted testing and logical analysis across all Figma prototypes to ensure seamless navigation, usability, and requirement traceability.
