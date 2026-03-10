@@ -306,7 +306,7 @@ To ensure a smooth review, we have structured the Figma file into the following 
 
 | Student Event Feed | Student Event Details |
 |:---:|:---:|
-| <img src="../docs_images/Student-Feed.png" width="300"> | <img src="../docs_images/Event-Details.png" width="300"> |
+| <img src="../docs_images/Student-Feed.png" width="300"> | <img src="../docs_images/Student-Event-Details.png" width="300"> |
 | *Figure 1: Event feed (US-01, US-02)* | *Figure 2: Event details (US-05, US-10)* |
 
 <br>
