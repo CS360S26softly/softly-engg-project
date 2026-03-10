@@ -9,6 +9,8 @@
 - [Object-Oriented Analysis (CRC Cards)](#object-oriented-analysis-crc-cards)
 - [UML Diagrams](#uml-diagrams)
 - [Product Backlog](#product-backlog)
+  - [Project Part 0 -- Repository Setup](#project-part-0----repository-setup)
+  - [Project Part 1 -- Project Selection & Pitch](#project-part-1----project-selection--pitch)
   - [Project Part 2 -- Preparation](#project-part-2----preparation)
   - [Project Part 3 -- Half-Way Checkpoint](#project-part-3----half-way-checkpoint)
   - [Project Part 4 -- Final Checkpoint](#project-part-4----final-checkpoint)
